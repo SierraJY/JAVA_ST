@@ -10,14 +10,12 @@ public class HelloWorld {
 		System.out.println("This is git test text!");
 		System.out.println("This is git test text3!");
 		System.out.println("END");
-<<<<<<< HEAD
-		System.out.println("1");
-	
-		}
-=======
-		
+		System.out.println("1");	
 		System.out.println("2");
+		System.out.println("3");
+	
+	
+	
+	
 	}
->>>>>>> test1
-
 }
