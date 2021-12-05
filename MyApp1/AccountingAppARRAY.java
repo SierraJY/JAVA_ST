@@ -1,8 +1,8 @@
+import javax.swing.JOptionPane;
 
-public class AccountingApp {
+public class AccountingAppARRAY {
 
 	public static void main(String[] args) {
-		//이렇게 프로그램의 기능은 바꾸지 않으면서 이해하기 쉽게 바꾸는 과정을 리팩토링이라고 합니다.
 		
 		double valueOFsupply = Double.parseDouble(args[0]); //Double.parseDouble()
 		double vatRate = 0.1;
@@ -11,9 +11,16 @@ public class AccountingApp {
 		double TOTAL = valueOFsupply + VAT;
 		double EXPENSE = valueOFsupply * expenseRate;
 		double INCOME = valueOFsupply - EXPENSE;
-		double DIVIDEND1 = INCOME * 0.5;
-		double DIVIDEND2 = INCOME * 0.3;
-		double DIVIDEND3 = INCOME * 0.2;
+		
+		double[] dividendRATEs = new double[3];
+		dividendRATEs[0] = Double.parseDouble(JOptionPane.showInputDialog("Enter DIVIDENDrates1"));
+		dividendRATEs[1] = Double.parseDouble(JOptionPane.showInputDialog("Enter DIVIDENDrates2"));
+		dividendRATEs[2] = Double.parseDouble(JOptionPane.showInputDialog("Enter DIVIDENDrates3"));
+		
+		
+		double DIVIDEND1 = INCOME * dividendRATEs[0];
+		double DIVIDEND2 = INCOME * dividendRATEs[1];
+		double DIVIDEND3 = INCOME * dividendRATEs[2];
 		
 		System.out.println("Value of supply : " + valueOFsupply);
 		System.out.println("VAT : " + VAT);
