@@ -35,3 +35,24 @@ public class AccountingAppARRAY {
 		System.out.println("Dividend 3 : " + DIVIDEND3);
 	}
 }
+
+
+//자바 배열 선언 및 초기화
+//
+//크기 할당&초기화 없이 배열 참조변수만 선언 
+//int[] arr;    int arr[];
+//
+//선언과 동시에 배열 크기 할당
+//int[] arr = new int[5];  String[] arr = new String[5];
+//
+//기존 배열의 참조 변수에 초기화 할당하
+//int[] arr;
+//arr = new int[5];
+//
+//선언과 동시에 배열의 크기 지정 및 값 초기화
+//int[] arr = {1,2,3,4,5};   int[] arr = new int[] {1,2,3,4,5};   String[] weeks = {"월","화","수"};
+//
+//2차원 배열 선언
+//int[][] arr = new int[4][3];    3의 크기의 배열을 4개 가질 수 있는 2차원 배열 할
+//int[][] brr = { {2,5,3}, {1,2,3}, {4,3,4}, {9,4,5} }
+

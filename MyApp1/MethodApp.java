@@ -2,6 +2,7 @@
 public class MethodApp {
 
 	public static double valueOFsupply;
+	//지역변수는 메소드 내에서 선언되며 메소드 내에서만 사용할 수 있다. 클래스변수 인스턴스변수 지역변수는 다른 것.
 	public static void main(String[] args) {
 		//메소드는 서로연관된 코드를 그룹핑해서 이름을 붙인 정리정돈 상자다.
 		
